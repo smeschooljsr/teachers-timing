@@ -229,8 +229,8 @@
             const start = document.getElementById('displayStart').innerText;
             const end = document.getElementById('displayEnd').innerText;
 
-            // Removed emojis to prevent encoding errors () in WhatsApp
-            const text = `*SHEFA'S MODERN ENGLISH SCHOOL*%0A_Directive of the School Authority_%0A%0A*STAFF NOTICE*%0A%0ATeachers,%0APlease note the school timings for:%0A*Date: ${date}*%0A%0A*Timings: ${start} to ${end}*%0A%0ABy order,%0A*Notice Incharge*`;
+            // Full official wording preserved for WhatsApp
+            const text = `*SHEFA'S MODERN ENGLISH SCHOOL*%0AJamshedpur | UDISE: 20180310696%0A%0A*OFFICIAL DIRECTIVE*%0A_By Order of School Authority_%0A%0ATeachers,%0APlease take note that the school timings for *${date}* shall be:%0A%0A*${start} - ${end}*%0A%0ABy order,%0A*Notice Incharge*`;
             
             window.open(`https://wa.me/?text=${text}`, '_blank');
         }
